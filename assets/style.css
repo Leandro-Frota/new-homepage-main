@@ -8,8 +8,15 @@
 
 --bg-body: hsl(36, 100%, 99%);
 --bg-btn: hsl(5, 85%, 63%);
+--bg-btn-hover: hsl(0, 0%, 0%);
+--bg-aside: hsl(0, 0%, 0%);
 
 --fc-text-primary: hsl(236, 13%, 42%);
+--fc-nav-item-hover: hsl(5, 85%, 63%);
+--fc-title-aside: hsl(35, 77%, 62%);
+--fc-title-aside-card: hsl(36, 100%, 99%);
+--fc-text-aside-card: hsl(236, 13%, 42%);
+
 
 
 --fs-nav: 18px;
@@ -24,7 +31,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 2rem 6rem;
+    padding: 4rem 4rem 4rem 4rem;
     background-color: var(--bg-body);
     font-family: 'Inter', sans-serif;
 }
@@ -35,18 +42,19 @@ body{
     height: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 5% 35% 35% 25%;
+    grid-template-rows: 0.4fr 1.2fr 1.2fr 1.2fr;
     grid-template-areas: "header header header" "mainImg mainImg aside"
-                        "mainTxtTitle mainTxtSecond aside" "article article article";
-    gap: 1rem;
+                        "mainTxtTitle mainTxtSecond aside" "article1 article2 article3";
+    gap: 2rem;
   
                         
 }
 
 .cabecalho{
     grid-area: header;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
 
 }
 
@@ -60,7 +68,11 @@ body{
     text-decoration: none;
     color: var(--fc-text-primary);
     cursor: pointer;
+    font-size: 15px;
 
+}
+.nav_item:hover{
+    color: var(--fc-nav-item-hover);
 }
 
 .nav_item_icon_burguer{
@@ -100,8 +112,12 @@ body{
     flex-direction: column;
     justify-content: space-between;
     align-items: start;
-    gap: 2rem;
-    padding: 1rem;
+    color: var(--fc-text-primary);
+    padding-right: 1rem;
+    letter-spacing: 2px;
+    line-height: 25px;
+    font-size: 15px;
+    font-weight: 300;
 }
 
 .main_text_second p{
@@ -118,24 +134,59 @@ body{
     font-weight: 300;
     letter-spacing: 3px;
     font-size: 10px;
+    cursor: pointer;
 
 }
 
+.main_text_second_btn:hover{
+    background-color: var(--bg-btn-hover);
+
+}
 .aside{
     grid-area: aside;
+    background-color: var(--bg-aside) ;
+    padding: 2rem 2rem;
    
 }
 
-.article{
-    grid-area: article;
-    border: 1px solid black;
-}   
-
-.cabecalho{
-    display: flex;
-    justify-content: space-between;
+.aside_title{
+    font-size: 2rem;
+    color: var(--fc-title-aside) ;
 
 }
+
+.aside_card{
+    padding-right:1rem ;
+}
+.aside_card h3{
+    color: hsl(36, 100%, 99%);
+    margin-top: 2rem;
+    margin-bottom: .5rem;
+}
+
+.aside_card p{
+    color: var(--fc-text-aside-card);
+    font-weight: 700;
+    font-size: 15px;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.article_card_1{
+    grid-area: article1;
+
+}   
+
+.article_card_2{
+    grid-area: article2;
+
+}   
+
+.article_card_3{
+    grid-area: article3;
+
+} 
+
 
 @media (max-width: 1000px) {
     .nav_item{
