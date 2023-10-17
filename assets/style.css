@@ -7,8 +7,10 @@
 :root{
 
 --bg-body: hsl(36, 100%, 99%);
+--bg-btn: hsl(5, 85%, 63%);
 
 --fc-text-primary: hsl(236, 13%, 42%);
+
 
 --fs-nav: 18px;
 
@@ -33,8 +35,12 @@ body{
     height: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 0.5fr 2fr 0.5fr;
-    grid-template-areas: "header header header" "main main aside" "article article article";
+    grid-template-rows: 5% 35% 35% 25%;
+    grid-template-areas: "header header header" "mainImg mainImg aside"
+                        "mainTxtTitle mainTxtSecond aside" "article article article";
+    gap: 1rem;
+  
+                        
 }
 
 .cabecalho{
@@ -61,14 +67,63 @@ body{
     display: none;
 }
 
-.main{
-    grid-area: main;
-    border: 1px solid black;
+.main_img{
+    grid-area: mainImg;
+  
+}
+
+.img_main{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.main_text_title{
+    grid-area: mainTxtTitle ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+ 
+}
+
+.main_text_title  h1{
+
+    font-size: 3.5rem;
+    font-weight: 800;
+    padding: 0 10px 10px 0;
+}
+
+.main_text_second{
+    grid-area: mainTxtSecond;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    gap: 2rem;
+    padding: 1rem;
+}
+
+.main_text_second p{
+    font-size: 15px;
+}
+
+.main_text_second_btn{
+    width: 10rem;
+    padding: 1rem;
+    background-color: var(--bg-btn) ;
+    border: none;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    letter-spacing: 3px;
+    font-size: 10px;
+
 }
 
 .aside{
     grid-area: aside;
-    border: 1px solid black;
+   
 }
 
 .article{
@@ -90,3 +145,4 @@ body{
     .nav_item_icon_burguer{
         display: block;
     }
+}
