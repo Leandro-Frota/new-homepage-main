@@ -26,12 +26,12 @@
 }
 
 body{
-    height: 100vh;
+    /* height: 100vh; */
     width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 4rem 4rem 4rem 4rem;
+    padding: 2em 4rem 4rem 4rem;
     background-color: var(--bg-body);
     font-family: 'Inter', sans-serif;
 }
@@ -42,7 +42,7 @@ body{
     height: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 0.4fr 1.2fr 1.2fr 1.2fr;
+    grid-template-rows: 0.25fr 1.0fr 0.5fr 0.5fr;
     grid-template-areas: "header header header" "mainImg mainImg aside"
                         "mainTxtTitle mainTxtSecond aside" "article1 article2 article3";
     gap: 2rem;
@@ -95,7 +95,8 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 1rem;
+    padding: .5rem 2rem 0rem 2rem;
+    margin-bottom: 2rem;
  
 }
 
@@ -112,9 +113,11 @@ body{
     flex-direction: column;
     justify-content: space-between;
     align-items: start;
+    gap:3rem;
     color: var(--fc-text-primary);
-    padding-right: 1rem;
-    letter-spacing: 2px;
+    padding: 0 1rem 0rem 1rem; 
+    margin-bottom: 4rem;
+    letter-spacing: 1px;
     line-height: 25px;
     font-size: 15px;
     font-weight: 300;
@@ -145,7 +148,8 @@ body{
 .aside{
     grid-area: aside;
     background-color: var(--bg-aside) ;
-    padding: 2rem 2rem;
+    padding: 2rem 2rem 1rem 1rem;
+    margin-bottom: 4rem;
    
 }
 
@@ -164,12 +168,20 @@ body{
     margin-bottom: .5rem;
 }
 
+.aside_card h3:hover{
+    color:var(--fc-title-aside);
+    cursor: pointer;
+}
+
 .aside_card p{
     color: var(--fc-text-aside-card);
     font-weight: 700;
     font-size: 15px;
     margin-top: 1rem;
     margin-bottom: 2rem;
+    letter-spacing: 1px;
+    line-height: 25px;
+    font-size: 15px;
 }
 
 .article_card_1{
@@ -207,6 +219,11 @@ body{
     font-family: 'Inter', sans-serif;
     font-weight: 700;
 
+}
+
+.article_card_text h4:hover{
+    color: var(--fc-nav-item-hover);
+    cursor: pointer;
 }
 
 .article_card_text p{
