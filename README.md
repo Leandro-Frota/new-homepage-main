@@ -1,6 +1,11 @@
 # Frontend Mentor - news-homepage-main
 
 Este é uma solução para o desafio [New-homepage-main component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/news-homepage-H6SWTa1MFl).
+Temas abordados HMTL, CSS e Javascritp.
+Pontos importantes do projeto:
+<li>Display Grid</li>
+<li>Menu de navegação lateral na versão mobile</li>
+<li>Botões funcionais para abrir e fechar menu lateral</li> 
 
 ## Visão Geral
 
@@ -12,6 +17,9 @@ Este é uma solução para o desafio [New-homepage-main component challenge on F
 
 #### Mobile
 ![](https://github.com/Leandro-Frota/new-homepage-main/blob/main/assets/images/screencapture-Mobile.png)
+
+#### Mobile - Menu Lateral
+![](https://github.com/Leandro-Frota/new-homepage-main/blob/main/assets/images/screencapture-mobile-barra-lateral.png)
 
 
 
@@ -27,3 +35,4 @@ Este é uma solução para o desafio [New-homepage-main component challenge on F
 - Grid
 - Responsividade
 - Media Query
+- Javascript
