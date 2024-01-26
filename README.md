@@ -11,7 +11,7 @@ Este é uma solução para o desafio [New-homepage-main component challenge on F
 ![](https://github.com/Leandro-Frota/new-homepage-main/blob/main/assets/images/Screencapure-Desktop.png)
 
 #### Mobile
-Em desenvolvimento
+![](https://github.com/Leandro-Frota/new-homepage-main/blob/main/assets/images/screencapture-Mobile.png)
 
 
 
