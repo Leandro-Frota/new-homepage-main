@@ -34,6 +34,7 @@ body{
     padding: 2em 4rem 4rem 4rem;
     background-color: var(--bg-body);
     font-family: 'Inter', sans-serif;
+    position: relative;
 }
 
 .container{
@@ -64,20 +65,67 @@ body{
     font-size: var(--fs-nav);
 }
 
-.nav_item{
+
+.nav_Container{
+    position: absolute;
+    inset: 0;
+    background:rgba(0,0,0,0.7);
+    opacity: 0;
+    visibility: hidden;
+  
+}
+.nav_Container.open{
+    opacity: 1;
+    visibility: visible;
+    
+}
+.menuMobile{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: star;
+    gap: 1.5rem;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    width: 70%;
+    background-color: white;
+    padding-left: 1rem;
+
+}
+
+
+.nav_item, .nav_item_mobile{
     text-decoration: none;
     color: var(--fc-text-primary);
     cursor: pointer;
     font-size: 15px;
 
 }
-.nav_item:hover{
+
+.nav_item_mobile{
+    color: var(--bg-aside);
+    font-size: 20px;
+}
+
+.nav_item:hover , .nav_item_mobile:hover{
     color: var(--fc-nav-item-hover);
 }
 
 .nav_item_icon_burguer{
     display: none;
 }
+
+.nav_item_icon_burguer_close{
+    position: absolute;
+    top: 1rem;
+    right: 2rem;
+    font-size: 1rem;
+}
+
+
 
 .main_img{
     grid-area: mainImg;
@@ -256,7 +304,7 @@ body{
 } 
 
 
-@media (max-width: 1000px) {
+@media (max-width: 800px) {
     body{
         padding: 1rem;
     }
