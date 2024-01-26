@@ -10,7 +10,8 @@
     <title>News Homepage</title>
 
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="src/style/style.css">
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon-32x32.png">
 </head>
 
 <body>
@@ -28,15 +29,14 @@
                 <a id="iconBurguer" class="nav_item_icon_burguer" href=""><img src="assets/images/icon-menu.svg"
                         alt="icone menu burguer"></a>
             </nav>
-            <div class="nav_Container open">
+            <div id="nav_Container" class="nav_Container">
                 <nav class="menuMobile">
                     <a class="nav_item_mobile" href="#">Home</a>
                     <a class="nav_item_mobile" href="#">New</a>
                     <a class="nav_item_mobile" href="#">Popular</a>
                     <a class="nav_item_mobile" href="#">Trending</a>
                     <a class="nav_item_mobile" href="#">Categories</a>
-                    <a id="iconBurguer" class="nav_item_icon_burguer_close" href=""><img
-                            src="assets/images/icon-menu-close.svg" alt="icone menu burguer"></a>
+                    <a id="iconBurguer_close" class="nav_item_icon_burguer_close" href="#"><img src="assets/images/icon-menu-close.svg" alt="icone menu burguer"></a>
                 </nav>
 
             </div>
@@ -112,6 +112,7 @@
 
 
     </div>
+    <script src="src/script/script.js"></script>
 </body>
 
 </html>
